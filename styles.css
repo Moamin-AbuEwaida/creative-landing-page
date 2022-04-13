@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.container {
+  background: black;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  width: 40px;
+}
+
+ul li {
+  display: inline-block;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.content .text {
+  width: 40%;
+  color: white;
+}
+
+.content .text h2 {
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.content .text p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.content .text a {
+  text-decoration: none;
+  background: white;
+  color: black;
+  padding: 8px 15px;
+  border-radius: 20px;
+}
+
+.content .image {
+  width: 30%;
+}
+
+.content .image img {
+  width: 180px;
+}
+
+.icons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icons img {
+  width: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.icons img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  .content .text {
+    align-items: center;
+    margin: 20px 0;
+  }
+  .content .image {
+    width: 50%;
+    display: flex;
+    margin: 20px auto;
+  }
+  .content .image img {
+    width: 300px;
+  }
+  .content .text a {
+    margin: auto;
+  }
+  .icons {
+    bottom: 100px;
+  }
+  .icons img {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px auto;
+  }
+  .content .text {
+    align-items: center;
+    margin: 20px 0;
+    width: 80%;
+  }
+  .content .image {
+    width: 80%;
+  }
+  .content .image img {
+    width: 200px;
+  }
+  .content .text a {
+    margin: auto;
+  }
+  .icons img {
+    width: 45px;
+  }
+}
